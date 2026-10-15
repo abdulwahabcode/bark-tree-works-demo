@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bark Tree Works LLC — Tree Service in Largo, FL</title>
+<meta name="description" content="Bark Tree Works LLC — tree removal, trimming, storm cleanup and stump grinding in Largo, FL. Call (719) 377-8701.">
+<style>
+:root{
+  --forest:#0F2118;          /* deep tinted forest black (60% dark) */
+  --forest-2:#152B1F;
+  --moss:#3E5B45;            /* 30% sections */
+  --bark:#7A5C3E;            /* bark brown support */
+  --brass:#B08B57;           /* 10% accent */
+  --cream:#F0EAD8;           /* off-white text on dark */
+  --cream-dim:#CFC6AE;
+  --paper:#F6F1E3;           /* light sections */
+  --body:#4A4438;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--forest);color:var(--cream);line-height:1.7;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.serif{font-family:Georgia,"Times New Roman",serif}
+
+/* NAV — bark band */
+nav{position:sticky;top:0;z-index:50;background:rgba(15,33,24,.95);backdrop-filter:blur(6px);border-bottom:1px solid rgba(176,139,87,.25)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .leaf{width:38px;height:38px;flex:none;border-radius:50% 4px 50% 4px;background:var(--moss);display:grid;place-items:center;transform:rotate(-8deg)}
+.brand b{font-family:Georgia,serif;font-weight:400;font-size:19px;letter-spacing:.02em;display:block;line-height:1.25}
+.brand small{font-size:10.5px;letter-spacing:.3em;color:var(--cream-dim);font-weight:600}
+.nav-links{display:none;gap:28px;font-size:14px;font-weight:600}
+.nav-links a{text-decoration:none;color:var(--cream-dim)}
+.nav-links a:hover{color:var(--brass)}
+.nav-call{display:inline-flex;align-items:center;min-height:46px;background:var(--brass);color:#221A0E;text-decoration:none;font-weight:700;font-size:14px;padding:12px 20px;border-radius:999px}
+.nav-call:hover{background:#C2A46D}
+@media(min-width:780px){.nav-links{display:flex}}
+
+/* HERO — forest canopy */
+.hero{position:relative;overflow:hidden;padding:96px 0 110px;background:
+  radial-gradient(700px 420px at 12% 8%,rgba(62,91,69,.55),transparent 60%),
+  radial-gradient(560px 380px at 88% 90%,rgba(122,92,62,.35),transparent 60%),
+  var(--forest)}
+.leaf-bg{position:absolute;opacity:.10;pointer-events:none}
+.hero .wrap{position:relative}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.34em;color:var(--brass);margin-bottom:18px}
+.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(2.5rem,7.6vw,4.4rem);line-height:1.06;max-width:660px}
+.hero h1 em{font-style:italic;color:#D9C79B}
+.hero p.lead{max-width:560px;color:var(--cream-dim);font-size:clamp(1rem,2.4vw,1.14rem);margin:22px 0 32px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:14px 30px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none}
+.btn-brass{background:var(--brass);color:#221A0E}
+.btn-brass:hover{background:#C2A46D}
+.btn-line{border:2px solid rgba(240,234,216,.35);color:var(--cream)}
+.btn-line:hover{border-color:var(--brass);color:var(--brass)}
+.hero-badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero-badges span{font-size:13px;color:var(--cream-dim);border:1px solid rgba(176,139,87,.35);border-radius:999px;padding:9px 18px}
+
+/* blob divider into light */
+.blob-div{display:block;width:100%;height:70px;background:var(--paper);margin-top:-1px}
+.blob-div path{fill:var(--forest)}
+
+/* SERVICES — light paper, organic cards */
+#services{background:var(--paper);color:var(--body);padding:80px 0}
+#services .eyebrow{color:#8A6F3E}
+#services h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(2rem,5.2vw,3rem);color:#22301F;margin-bottom:12px}
+#services .sub{max-width:600px;margin-bottom:40px;color:#6B6252}
+.svc-grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:#fff;border-radius:28px 28px 28px 8px;padding:32px 28px;box-shadow:0 14px 34px rgba(34,48,31,.08);border-top:5px solid var(--moss);transition:transform .2s}
+.svc:nth-child(2n){border-top-color:var(--bark)}
+.svc:nth-child(3n){border-top-color:var(--brass)}
+.svc:hover{transform:translateY(-5px)}
+.svc .leafdot{width:44px;height:44px;border-radius:50% 6px 50% 6px;background:#E9EFE4;display:grid;place-items:center;margin-bottom:18px}
+.svc h3{font-family:Georgia,serif;font-weight:400;font-size:20px;color:#22301F;margin-bottom:8px}
+.svc p{font-size:14.5px;color:#6B6252}
+
+/* STORM BANNER — bark band */
+.storm{background:linear-gradient(120deg,#5C452C,#7A5C3E 60%,#5C452C);padding:60px 0;color:#F3EBD6}
+.storm-in{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.storm h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(1.7rem,4.6vw,2.5rem);max-width:560px}
+.storm p{color:#E4D6B8;max-width:520px;margin-top:10px}
+
+/* WHY — moss */
+#why{background:var(--moss);padding:80px 0;color:#EDE7D2}
+#why .eyebrow{color:#D9C79B}
+#why h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(2rem,5.2vw,3rem);margin-bottom:36px;max-width:640px}
+.why-grid{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+.why-card{background:rgba(15,33,24,.28);border:1px solid rgba(217,199,155,.25);border-radius:22px;padding:30px 28px}
+.why-card .ring{width:46px;height:46px;border-radius:50%;border:2px solid var(--brass);display:grid;place-items:center;font-family:Georgia,serif;font-size:19px;color:#D9C79B;margin-bottom:16px}
+.why-card h3{font-family:Georgia,serif;font-weight:400;font-size:20px;margin-bottom:8px;color:#F4EEDC}
+.why-card p{font-size:14.5px;color:#D8D0B8}
+
+/* AREA — dark forest */
+#area{background:var(--forest-2);padding:70px 0;text-align:center}
+#area h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(1.8rem,4.6vw,2.5rem);margin-bottom:10px}
+#area p{color:var(--cream-dim);max-width:540px;margin:0 auto 26px}
+.towns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.towns span{border:1px solid rgba(176,139,87,.4);color:var(--cream-dim);border-radius:999px;padding:10px 20px;font-size:14px}
+.towns span.home{background:var(--brass);border-color:var(--brass);color:#221A0E;font-weight:700}
+
+/* CONTACT */
+#contact{background:var(--forest);padding:80px 0}
+#contact h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(2rem,5.2vw,3rem);text-align:center;margin-bottom:10px}
+#contact .sub{text-align:center;color:var(--cream-dim);max-width:560px;margin:0 auto 38px}
+.contact-grid{display:grid;gap:16px;grid-template-columns:1fr;max-width:880px;margin:0 auto}
+@media(min-width:720px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.c-card{background:rgba(246,241,227,.05);border:1px solid rgba(176,139,87,.3);border-radius:24px;padding:32px 24px;text-align:center}
+.c-card h3{font-size:11px;letter-spacing:.32em;color:var(--brass);margin-bottom:10px;font-weight:700}
+.c-card a.big{font-size:19px;font-weight:700;color:var(--cream);text-decoration:none;word-break:break-all}
+.c-card a.big:hover{color:#D9C79B}
+.c-card p{font-size:13px;color:var(--cream-dim);margin-top:8px}
+.big-cta{display:flex;justify-content:center;margin-top:36px}
+
+footer{background:#0A1710;color:#9A917A;padding:28px 0 38px;font-size:13px}
+.foot-in{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;justify-content:space-between}
+.demo-credit{font-size:11.5px;letter-spacing:.1em}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Bark Tree Works home">
+      <span class="leaf" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F0EAD8" stroke-width="1.8"><path d="M12 21c-5 0-8-3.5-8-8 0-5 4-9 10-10-.5 6-1 12-2 18z"/><path d="M12 21c0-6 1-11 5-14"/></svg>
+      </span>
+      <span><b>Bark Tree Works</b><small>LARGO · FLORIDA</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a><a href="#why">Why Us</a><a href="#area">Service Area</a><a href="#contact">Contact</a>
+    </div>
+    <a class="nav-call" href="tel:+17193778701">(719) 377-8701</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="leaf-bg" style="left:-40px;top:60px;width:340px" viewBox="0 0 24 24" fill="none" stroke="#3E5B45" stroke-width="1"><path d="M12 21c-5 0-8-3.5-8-8 0-5 4-9 10-10-.5 6-1 12-2 18z"/></svg>
+  <svg class="leaf-bg" style="right:-60px;bottom:20px;width:420px;transform:rotate(24deg)" viewBox="0 0 24 24" fill="none" stroke="#3E5B45" stroke-width="1"><path d="M12 21c-5 0-8-3.5-8-8 0-5 4-9 10-10-.5 6-1 12-2 18z"/></svg>
+  <div class="wrap">
+    <p class="eyebrow">TREE SERVICE — LARGO, FL</p>
+    <h1>Healthy trees.<br><em>Safe</em> property.</h1>
+    <p class="lead"><strong style="color:var(--cream)">Bark Tree Works LLC</strong> is Largo's hands-on tree crew — careful removals, proper pruning, storm cleanup, and stump grinding. We treat your trees like they're ours and your yard like it's our reputation.</p>
+    <div class="cta-row">
+      <a class="btn btn-brass" href="tel:+17193778701">Call (719) 377-8701</a>
+      <a class="btn btn-line" href="mailto:BARKTREEWORKSLLC@GMAIL.COM">Email for a Free Estimate</a>
+    </div>
+    <div class="hero-badges">
+      <span>🌳 Free on-site estimates</span><span>⛈ Storm damage response</span><span>🧹 Full cleanup included</span>
+    </div>
+  </div>
+</header>
+<svg class="blob-div" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 L1440,0 L1440,18 C1200,66 960,64 720,44 C480,24 240,58 0,34 Z"/></svg>
+
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">WHAT WE DO</p>
+    <h2>Rooted in good work</h2>
+    <p class="sub">Every job ends the same way: the tree handled, the yard raked, the driveway blown clean.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="leafdot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E5B45" stroke-width="2"><path d="M12 22V8M12 8 5 3m7 5 7-5M12 13c-3 0-5-2-5-5m5 5c3 0 5-2 5-5"/></svg></div>
+        <h3>Tree Removal</h3><p>Dead, diseased, or dangerously leaning trees taken down in sections — rigged safe around houses, fences, and power lines.</p>
+      </div>
+      <div class="svc">
+        <div class="leafdot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7A5C3E" stroke-width="2"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><path d="M7.5 8 12 20l4.5-12M12 20v-6"/></svg></div>
+        <h3>Trimming &amp; Pruning</h3><p>Crown thinning, deadwood removal, and clearance pruning that keeps trees healthy and storms from turning limbs into projectiles.</p>
+      </div>
+      <div class="svc">
+        <div class="leafdot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B08B57" stroke-width="2"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+        <h3>Storm Cleanup</h3><p>Downed limbs and split trunks after Florida weather — we clear it fast and haul it away, so your yard's back to normal.</p>
+      </div>
+      <div class="svc">
+        <div class="leafdot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E5B45" stroke-width="2"><ellipse cx="12" cy="10" rx="7" ry="4"/><path d="M5 10v4c0 2.2 3.1 4 7 4s7-1.8 7-4v-4M12 14v7"/></svg></div>
+        <h3>Stump Grinding</h3><p>Leftover stumps ground below grade and the chips raked out — reclaim the spot for grass, garden, or nothing at all.</p>
+      </div>
+      <div class="svc">
+        <div class="leafdot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7A5C3E" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M7 13h10"/></svg></div>
+        <h3>Lot &amp; Brush Clearing</h3><p>Overgrown lots, fence lines, and brush piles cleared out — for homeowners reclaiming the backyard and prepping land alike.</p>
+      </div>
+      <div class="svc">
+        <div class="leafdot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B08B57" stroke-width="2"><path d="M12 21c-5 0-8-3.5-8-8 0-5 4-9 10-10-.5 6-1 12-2 18z"/></svg></div>
+        <h3>Tree Health Checkups</h3><p>Not sure if that lean is a problem? We'll look, tell you straight what's fine and what isn't — no scare tactics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="storm">
+  <div class="wrap storm-in">
+    <div>
+      <h2>Storm just came through?</h2>
+      <p>Downed trees and hanging limbs can't wait. Call now — we prioritize storm damage and hazardous situations.</p>
+    </div>
+    <a class="btn btn-brass" href="tel:+17193778701" style="background:#F0EAD8;color:#3A2C1B">Call (719) 377-8701</a>
+  </div>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <p class="eyebrow">WHY BARK TREE WORKS</p>
+    <h2>A crew that treats your yard like their own</h2>
+    <div class="why-grid">
+      <div class="why-card"><div class="ring">i</div><h3>Arborist-minded pruning</h3><p>We cut for the tree's health, not just the shape — proper cuts, no topping, no hat-racking.</p></div>
+      <div class="why-card"><div class="ring">ii</div><h3>Cleanup is the job</h3><p>Branches chipped, logs stacked or hauled, lawn raked. You shouldn't find a single twig we left.</p></div>
+      <div class="why-card"><div class="ring">iii</div><h3>Straight-talk estimates</h3><p>Free on-site estimates with the price before we start. If a tree doesn't need to come down, we'll say so.</p></div>
+      <div class="why-card"><div class="ring">iv</div><h3>Safety-first rigging</h3><p>Ropes, not luck, near your roof and lines. Tight-access removals are our normal Tuesday.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <p class="eyebrow">SERVICE AREA</p>
+    <h2>Rooted in Largo, branching out</h2>
+    <p>Serving Pinellas County and nearby communities across the Tampa Bay area.</p>
+    <div class="towns">
+      <span class="home">Largo</span><span>Clearwater</span><span>Pinellas Park</span><span>Seminole</span><span>Dunedin</span><span>St. Petersburg</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow" style="text-align:center">GET A FREE ESTIMATE</p>
+    <h2>Let's look at your trees</h2>
+    <p class="sub">Call, email with photos, or message us — we'll come take a look and give you a straight price.</p>
+    <div class="contact-grid">
+      <div class="c-card"><h3>CALL</h3><a class="big" href="tel:+17193778701">(719) 377-8701</a><p>Fastest for storm damage</p></div>
+      <div class="c-card"><h3>EMAIL</h3><a class="big" href="mailto:BARKTREEWORKSLLC@GMAIL.COM">BARKTREEWORKSLLC@GMAIL.COM</a><p>Send photos of the tree</p></div>
+      <div class="c-card"><h3>FACEBOOK</h3><a class="big" href="https://www.facebook.com/61552668816873/" target="_blank" rel="noopener">Bark Tree Works LLC</a><p>Message us anytime</p></div>
+    </div>
+    <div class="big-cta"><a class="btn btn-brass" href="tel:+17193778701">Call (719) 377-8701</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>© 2026 Bark Tree Works LLC · Largo, FL</span>
+    <span class="demo-credit">DEMO WEBSITE BY WAHAB CODES</span>
+  </div>
+</footer>
+
+</body>
+</html>
